@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/onfoto"
+
+    >    <com.google.android.gms.ads.AdView
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adViev"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    ads:adSize ="BANNER"
+    ads:adUnitId="ca-app-pub-2261379780093081/9973964616"
+    ></com.google.android.gms.ads.AdView>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <Button
+        android:fontFamily="@font/alefregular"
+
+        android:id="@+id/soruButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mybutton"
+        android:padding="10dp"
+        android:text="Bilgi Yarışması"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        ></Button>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dogruButton"
+        android:background="@drawable/mybutton"
+        android:layout_below="@+id/soruButton"
+        android:layout_centerHorizontal="true"
+        android:text="Doğru - Yanlış"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alefregular"
+        android:textSize="20sp"></Button>
+
+
+</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/adViev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize ="BANNER"
+        ads:adUnitId="ca-app-pub-2261379780093081/1903902904"
+        ></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

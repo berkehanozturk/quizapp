@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kazandin"
+    android:orientation="vertical"
+    android:background="@drawable/deneme2"
+    >
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/callBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="1"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/alefregular"
+        android:text="tekrar oyna"
+        android:textColor="#FFFFFF"
+        android:layout_marginVertical="50dp"
+        android:textSize="20sp"></Button>
+
+    <TextView
+        android:layout_below="@+id/callBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/kazandin"
+        android:text="SEN COK ZEKİ BİR COCUKSUN"
+        android:fontFamily="@font/alef"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"></TextView>
+   <TextView
+       android:layout_centerHorizontal="true"
+android:layout_below="@+id/kazandin"
+       android:layout_marginLeft="150dp"
+       android:layout_marginTop="50dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="PUANIN:"
+       android:textColor="#000000"
+       android:textSize="25sp"
+       android:id="@+id/puanSkoru"
+       ></TextView>
+
+
+
+</RelativeLayout>

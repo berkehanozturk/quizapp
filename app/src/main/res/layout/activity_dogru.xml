@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dogruActivity"
+    android:background="@drawable/arkafoto">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_keyboard_backspace_black_24dp"
+    android:backgroundTint="@color/colorPrimary"
+    android:id="@+id/backbutton1"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/puan"
+        android:text="0 puansınız"
+        android:textColor="#000000"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginVertical="50dp"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_marginVertical="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/liner"
+        android:layout_below="@+id/puan"
+        android:background="@drawable/customback"
+
+        > <TextView
+        android:fontFamily="@font/alefregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionText"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="selam"
+        android:textSize="22sp"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+
+        ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customback"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+        <Button
+
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/answerA"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/custom_button"
+            android:text="Dogru"
+            android:fontFamily="@font/alefregular"
+            android:padding ="10dp"
+            android:layout_marginVertical="20dp"
+            android:textAllCaps="false"></Button>
+        <Button
+            android:padding="10dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="50dp"
+            android:textAllCaps="false"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/answerB"
+            android:background="@drawable/custom_button"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/alefregular"
+            android:text="Yanlış"
+            ></Button>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/adViev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize ="BANNER"
+        ads:adUnitId="ca-app-pub-2261379780093081/6713376451"
+        ></com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
